@@ -26,8 +26,8 @@ function Card({id,image,info,name,price, removeTour}) {
                     </span>
                 </div>
             </div>
-
-            <button  className="btn-red" onClick={() => removeTour(id)}>
+         {/* in the onclick event of button we have passed id form child-card to parent-App components */}
+            <button  className="btn-red" onClick={() => removeTour(id)}> 
                 Not Interested
             </button>
 

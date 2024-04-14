@@ -5,6 +5,7 @@ import Tours from "./componets/Tours";
 const App = () => {
   const [tours, setTours] = useState(data);
 
+  // for taking id data from child-cards to parent-App
   function removeTour(id) {
     const newTour = tours.filter(tour => tour.id !== id);
     setTours(newTour);
